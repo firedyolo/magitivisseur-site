@@ -1,0 +1,163 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    color: rgb(214, 209, 209);
+    background-color: rgb(19, 18, 18);
+}
+
+.header, .infos, .installation {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Partie "header" */
+
+.header {
+    background-color: black;
+    text-align: center;
+}
+
+/* Parties "infos" */
+.infos {
+    background-color: rgb(26, 25, 25);
+}
+
+table {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+}
+
+tr, caption {
+    width: max-content;
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+caption {
+    padding-bottom: 10px;
+}
+
+td {
+    border: none;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.positives {
+    border-right: 1px rgb(80, 77, 77) solid;
+}
+
+/* Parties "installation" */
+.installation {
+    background-color: rgb(19, 18, 18);
+}
+
+.pc p, .pc li {
+    font-size: 1.3rem;
+}
+
+.precision {
+    list-style: none;
+    text-align: left;
+}
+
+.pc img {
+    display: block;
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.android li {
+    list-style: decimal;
+    text-align: left;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.android button {
+    background-color: rgb(56, 49, 49);
+    border: none;
+    color: rgb(214, 209, 209);
+}
+
+/* Partie "Discord" */
+.discord h1 {
+	position: relative;
+	left: 25%;
+	transform: translate(-25%);
+	color: #b99cf0;
+	font-size: 3rem;
+}
+
+.discord h2 {
+	position: relative;
+	color: #9e77e6;
+	font-size: 2.5rem;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.discord ul {
+    width: max-content;
+}
+
+.discord li {
+    list-style: none;
+    text-align: left;
+    font-size: 2rem;
+}
+
+iframe {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 680px) {
+    th, td {
+        font-size: 50%;
+    }
+
+    caption, .discord li {
+        font-size: 1rem;
+    }
+
+    .discord ul {
+        width: max-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    iframe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    iframe {
+        transform: translate(-50%);
+    }
+
+    .pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .android {
+        display: none;
+    }
+}
