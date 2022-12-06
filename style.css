@@ -54,6 +54,8 @@ td {
     border: none;
     font-size: 2rem;
     text-align: left;
+    width: 15px;
+    text-indent: 15px;
 }
 
 .positives {
