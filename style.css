@@ -76,12 +76,17 @@ td {
     text-align: left;
 }
 
-.pc img {
-    display: block;
-    float: none;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+.pc li {
+    list-style: decimal;
+    text-align: left;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.pc button {
+    background-color: rgb(56, 49, 49);
+    border: none;
+    color: rgb(214, 209, 209);
 }
 
 .android li {
